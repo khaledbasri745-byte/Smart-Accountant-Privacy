@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- وسوم إجبار المتصفح على طلب أحدث نسخة دائماً (منع الكاش) -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
     <title>سياسة الخصوصية - Smart Accountant</title>
     <!-- خط Cairo من Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -108,6 +114,283 @@
             object-fit: cover;
             border: 3px solid #3b82f6;
             box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+            background-color: #0d1527;
+        }
+
+        .app-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff 0%, #93c5fd 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 5px;
+        }
+
+        .page-badge {
+            display: inline-block;
+            background: rgba(217, 119, 6, 0.15);
+            color: var(--accent-gold);
+            border: 1px solid rgba(217, 119, 6, 0.3);
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-top: 8px;
+        }
+
+        .last-update {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 6px;
+        }
+
+        /* ----- أقسام الصفحة ----- */
+        .section {
+            margin-bottom: 22px;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            color: #60a5fa;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+        }
+
+        .section-title i {
+            color: var(--accent-gold);
+            font-size: 0.95rem;
+        }
+
+        .section-text {
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-top: 6px;
+        }
+
+        .features-list li {
+            position: relative;
+            padding-right: 22px;
+            margin-bottom: 6px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .features-list li::before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            right: 0;
+            color: #3b82f6;
+        }
+
+        /* ----- صندوق التواصل ----- */
+        .contact-box {
+            background: rgba(30, 58, 138, 0.25);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 14px;
+            padding: 18px;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .contact-box a {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: bold;
+            word-break: break-all;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="circle-bg circle-1"></div>
+    <div class="circle-bg circle-2"></div>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo-wrapper">
+                <img src="https://lh3.googleusercontent.com/d/1lrTn-hzorsvkUfn2dImfL-0B8Q3uAoku" alt="Smart Accountant Logo" class="app-logo">
+            </div>
+            <h1 class="app-title">Smart Accountant</h1>
+            <div class="page-badge">سياسة الخصوصية (Privacy Policy)</div>
+            <span class="last-update">تاريخ آخر تحديث: 1 جانفي 2026</span>
+        </div>
+
+        <!-- مقدمة -->
+        <div class="section">
+            <p class="section-text">
+                مرحباً بك في تطبيق <strong>Smart Accountant</strong> (المحاسب الذكي). نحن نحترم خصوصيتك ونلتزم بتوفير أقصى درجات الحماية والسرية للبيانات والمعاملات المالية التي تُدخلها. تُوضّح سياسة الخصوصية هذه آلية جمع المعلومات، واستخدامها، وحفظها، وحمايتها. باستعمالك للتطبيق، فإنك تقر بموافقتك الكاملة على ما ورد في هذه السياسة.
+            </p>
+        </div>
+
+        <!-- 1. المعلومات التي نجمعها -->
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-database"></i>
+                1. المعلومات التي نجمعها
+            </div>
+            <p class="section-text">قد يتطلب استخدام ميزات التطبيق إدخال المعطيات التالية:</p>
+            <ul class="features-list">
+                <li>الاسم والبريد الإلكتروني ورقم الهاتف (اختياري).</li>
+                <li>اسم المؤسسة أو النشاط التجاري.</li>
+                <li>بيانات الإيرادات، المصروفات، القيود المحاسبية، والأصول والخصوم.</li>
+                <li>قوائم العملاء، الموردين، الفواتير، والتقارير المالية.</li>
+            </ul>
+            <p class="section-text" style="margin-top: 8px;">معلومات تقنية تُجمع تلقائياً لتحسين الأداء:</p>
+            <ul class="features-list">
+                <li>نوع الجهاز، إصدار نظام التشغيل، ولغة النظام.</li>
+                <li>إصدار التطبيق ورسائل وسجلات الأعطال (Crash Logs).</li>
+            </ul>
+        </div>
+
+        <!-- 2. كيفية استخدام المعلومات -->
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-cogs"></i>
+                2. كيفية استخدام المعلومات
+            </div>
+            <ul class="features-list">
+                <li>إدارة الحسابات وتنظيم المعاملات المالية والفواتير.</li>
+                <li>إعداد التقارير والإحصائيات وتسهيل تصدير البيانات.</li>
+                <li>تحسين تجربة المستخدم وإصلاح الأعطال البرمجية.</li>
+                <li>تطوير ميزات جديدة وتقديم الدعم الفني المباشر.</li>
+            </ul>
+        </div>
+
+        <!-- 3. تخزين البيانات -->
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-hdd"></i>
+                3. تخزين البيانات
+            </div>
+            <p class="section-text">
+                تُحفظ جميع بياناتك المحاسبية والمالية <strong>محلياً على جهازك الشخصي</strong> بشكل افتراضي لضمان السرية. في حال تفاعلك مع خدمات النسخ الاحتياطي السحابي أو المزامنة، يتم تشفير البيانات وتخزينها على خوادم آمنة خاضعة لحمايتك الخاصة.
+            </p>
+        </div>
+
+        <!-- 4. مشاركة البيانات -->
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-user-shield"></i>
+                4. مشاركة البيانات
+            </div>
+            <p class="section-text">
+                نحن لا نبيع، ولا نؤجر، ولا نتاجر ببياناتك مع أي أطراف ثالثة إطلاقاً. لا تتم مشاركة أي معلومة إلا في الحالات التالية:
+            </p>
+            <ul class="features-list">
+                <li>الحصول على موافقة صريحة منك.</li>
+                <li>الامتثال للقوانين والأنظمة والتشريعات النافذة.</li>
+            </ul>
+        </div>
+
+        <!-- 5. حماية البيانات -->
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-lock"></i>
+                5. حماية البيانات والأمان
+            </div>
+            <p class="section-text">
+                نطبّق إجراءات أمنية وتقنية متقدمة لحماية بياناتك من الوصول غير المصرح به، أو التعديل، أو الضياع. ومع ذلك، يرجى العلم أنه لا يوجد وسيلة نقل عبر الإنترنت أو تخزين إلكتروني مضمونة بنسبة 100%.
+            </p>
+        </div>
+
+        <!-- 6. صلاحيات التطبيق -->
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-key"></i>
+                6. أذونات وصلاحيات الجهاز
+            </div>
+            <ul class="features-list">
+                <li><strong>التخزين (Storage):</strong> لحفظ وتصدير الفواتير والتقارير المالية بصيغة PDF أو Excel.</li>
+                <li><strong>الإنترنت (Internet):</strong> للتحقق من التحديثات وإجراء النسخ الاحتياطي عند الطلب.</li>
+                <li><strong>الكاميرا (Camera):</strong> لإرفاق الصور والمسندات المالية أو قراءة رموز QR (عند توفرها).</li>
+            </ul>
+        </div>
+
+        <!-- 7. النسخ الاحتياطي -->
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-cloud-upload-alt"></i>
+                7. النسخ الاحتياطي واستعادة البيانات
+            </div>
+            <p class="section-text">
+                يتحمل المستخدم المسؤولية الكاملة عن إنشاء الاحتفاظ بملفات النسخ الاحتياطي الخاصة به عبر الوسائل المتاحة، ولا نتحمل أي مسؤولية عن فقدان البيانات في حال التلف أو عدم الاحتفاظ بنسخة احتياطية.
+            </p>
+        </div>
+
+        <!-- 8. حقوق المستخدم -->
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-user-check"></i>
+                8. حقوق المستخدم
+            </div>
+            <p class="section-text">تتمتع بالحق الكامل في:</p>
+            <ul class="features-list">
+                <li>الوصول، تعديل، وحذف بياناتك في أي وقت داخل التطبيق.</li>
+                <li>تصدير بياناتك المالية بالصيغ المتاحة.</li>
+                <li>حذف حسابك نهائياً والبيانات المرتبطة به.</li>
+            </ul>
+        </div>
+
+        <!-- 9. خصوصية الأطفال -->
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-child"></i>
+                9. خصوصية الأطفال
+            </div>
+            <p class="section-text">
+                التطبيق غير موجه للأطفال ممن هم دون 13 عاماً، ولا نجمع أي معلومات شخصية تخصهم بشكل متعمد.
+            </p>
+        </div>
+
+        <!-- 10. التعديلات -->
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-sync-alt"></i>
+                10. تحديث سياسة الخصوصية
+            </div>
+            <p class="section-text">
+                قد نقوم بتحديث سياسة الخصوصية هذه عند الحاجة. يتم نشر التحديثات داخل التطبيق أو عبر هذه الصفحة مع تحديث تاريخ المراجعة.
+            </p>
+        </div>
+
+        <!-- 11. صندوق التواصل -->
+        <div class="contact-box">
+            <div class="section-title" style="justify-content: center;">
+                <i class="fas fa-envelope"></i>
+                11. التواصل والدعم الفني
+            </div>
+            <p class="section-text" style="text-align: center; margin-bottom: 8px;">
+                إذا كانت لديك أي استفسارات أو طلبات بشأن سياسة الخصوصية، يرجى مراسلتنا عبر البريد الإلكتروني:
+            </p>
+            <a href="mailto:khaled.basri745@gmail.com">khaled.basri745@gmail.com</a>
+        </div>
+    </div>
+
+    <footer>
+        جميع الحقوق محفوظة &copy; 2026 Smart Accountant
+    </footer>
+
+</body>
+</html>
             background-color: #0d1527;
         }
 
