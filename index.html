@@ -2,9 +2,9 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- وسوم إجبار المتصفح على طلب أحدث نسخة دائماً (منع الكاش) -->
+    <!-- وسوم منع الكاش لضمان التحديث التلقائي -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
@@ -34,11 +34,8 @@
             padding: 0;
         }
 
-        html, body {
-            width: 100%;
-            max-width: 100%;
-            overflow-x: hidden !important;
-            position: relative;
+        html {
+            overflow-x: hidden;
         }
 
         body {
@@ -46,9 +43,10 @@
             background-color: var(--bg-dark);
             color: var(--text-main);
             line-height: 1.8;
-            min-height: 100vh;
-            padding: 20px 0;
+            padding: 20px 0 60px 0; /* مساحة كافية أسفل الصفحة لتفادي القطع */
             margin: 0;
+            overflow-x: hidden;
+            width: 100%;
         }
 
         /* ----- الخلفية الدائرية التفاعلية ----- */
@@ -77,7 +75,7 @@
             left: -40px;
         }
 
-        /* ----- الحاوية الرئيسية ممركزة بثبات ----- */
+        /* ----- الحاوية الرئيسية ----- */
         .container {
             width: 90%;
             max-width: 720px;
@@ -212,10 +210,12 @@
         }
 
         footer {
-            margin-top: 20px;
+            margin-top: 25px;
             text-align: center;
             color: var(--text-muted);
             font-size: 0.8rem;
+            position: relative;
+            z-index: 1;
         }
     </style>
 </head>
@@ -231,7 +231,7 @@
             </div>
             <h1 class="app-title">Smart Accountant</h1>
             <div class="page-badge">سياسة الخصوصية (Privacy Policy)</div>
-            <span class="last-update">تاريخ آخر تحديث: 1 جانفي 2026</span>
+            <span class="last-update">تاريخ آخر تحديث: 21 يوليو 2026</span>
         </div>
 
         <!-- مقدمة -->
